@@ -7,13 +7,13 @@ export default function Timer({time}) {
      ${(time % 60).toString().padStart(2, "0")}}` ;
     
     return (
-        <view style={style.container}>
+        <View style={styles.container}>
             <Text style={styles.time}>{formattedTime}</Text>
-        </view>
+        </View>
     );
 }
 
-const style= StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         flex: 0.3,
         justifyContent: "center",

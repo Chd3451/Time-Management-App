@@ -3,6 +3,7 @@ import { StyleSheet, Platform, Text, View, Button, SafeAreaView, TouchableOpacit
 import {useState} from "react";
 import Header from './src/components/Header';
 import Timer from './src/components/Timer';
+import { Audio } from "expo-av";
 
 const colors = ["#F7DC6F","#A2D9CE","#D7BDE2"]
 
@@ -10,10 +11,17 @@ export default function App() {
   const [isWorking, setIsWorking] = useState(false);
   const [time, setTime] = useState(25 * 60);
   const [currentTime, setCurrentTime] = useState("POMO" | "SHORT" | "BREAK");
-  const [isActive, setIsActive] = useState(flase);
+  const [isActive, setIsActive] = useState(false);
 
   function handleStartStop() {
     setIsActive(!isActive)
+  }
+ 
+  async function playSound(){
+    const { sound } = await Audio.Sound.createAsync(
+      require("./assets/Click-00.mp3")
+    );
+    await sound.playAsync();
   }
 
   return (
@@ -27,11 +35,10 @@ export default function App() {
       <Header currentTime={currentTime}
       setCurrentTime={setCurrentTime}
       setTime={setTime}
-      
       />
       <Timer 
       time={time} />
-      <TouchableOpacity  onPress={handelStartStop}
+      <TouchableOpacity  onPress={handleStartStop}
       style={styles.button}>
         <Text style={{color: "white", fontWeight: "bold"}}>
           {isActive ? "STOP" : "START"}</Text>

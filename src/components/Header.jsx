@@ -1,4 +1,4 @@
-import {view, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet} from "react-native";
 import { TouchableOpacity } from "react-native";
 
 const options = ["Pomodoro", "Short Break", " Long Breack"];
@@ -8,11 +8,11 @@ export default function Header ({currentTime, setCurrentTime, setTime}){
   function handlesPress(index) {
     const newtime = index === 0 ? 25 : index === 1 ? 5 : 15;
     setCurrentTime(index);
-    setTime(newTime * 60);
+    setTime(newtime * 60);
   }
 
     return(
-        <view style={{flexDirection: "row"}}>
+        <View style={{flexDirection: "row"}}>
          {options.map((item, index) => (
            <TouchableOpacity key={index} 
            onPress={() => handlesPress(index)} 
@@ -22,7 +22,7 @@ export default function Header ({currentTime, setCurrentTime, setTime}){
              <Text style={{fontWeight: "bold"}}>{item}</Text>
            </TouchableOpacity>
     ))}
-        </view>
+        </View>
     );
 }
    

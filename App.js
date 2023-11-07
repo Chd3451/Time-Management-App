@@ -22,10 +22,11 @@ export default function App() {
     } else {
       clearInterval(interval);
     }
-  }, [])
+  }, [isActive])
 
   function handleStartStop() {
-    setIsActive(!isActive)
+    playSound();
+    setIsActive(!isActive);
   }
  
   async function playSound(){

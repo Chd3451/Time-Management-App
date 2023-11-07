@@ -47,7 +47,7 @@ export default function App() {
   return (
     <SafeAreaView style={[styles.container, {backgroundColor: colors[currentTime] }]}>
     <View style={{ flex: 1,
-    paddingHorizontal:15,
+       paddingHorizontal: 15,
        paddingTop: Platform.OS === "android" && 30}}>
 
       <Text style={styles.text}>Pomodoro</Text>

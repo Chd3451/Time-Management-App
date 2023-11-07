@@ -6,17 +6,17 @@ const options = ["Pomodoro", "Short Break", " Long Breack"];
 export default function Header ({currentTime, setCurrentTime, setTime}){ 
 
   function handlesPress(index) {
-    const newtime = index === 0 ? 25 : index === 1 ? 5 : 15;
+    const newTime = index === 0 ? 25 : index === 1 ? 5 : 15;
     setCurrentTime(index);
-    setTime(newtime * 60);
+    setTime(newTime * 60);
   }
 
     return(
-        <View style={{flexDirection: "row"}}>
+        <View style={{flexDirection: "row" }}>
          {options.map((item, index) => (
            <TouchableOpacity key={index} 
            onPress={() => handlesPress(index)} 
-           style={[styles.itemStyle, currentTime !==index && { borderColor: "transparent"}
+           style={[styles.itemStyle, currentTime !== index && { borderColor: "transparent"}
         ]}
             >
              <Text style={{fontWeight: "bold"}}>{item}</Text>
@@ -32,6 +32,7 @@ itemStyle: {
     alingItems: "center",
     borderWidth: 3, 
     padding: 5, 
+    borderRadius: 10,
     borderColor: "white",
     marginVertical: 20,
 }

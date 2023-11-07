@@ -29,7 +29,7 @@ export default function Header ({currentTime, setCurrentTime, setTime}){
 const styles = StyleSheet.create({
 itemStyle: {
     width: "33%",
-    alingItems: "center",
+    alignItems: "center",
     borderWidth: 3, 
     padding: 5, 
     borderRadius: 10,

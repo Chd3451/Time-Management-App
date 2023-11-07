@@ -10,7 +10,7 @@ export default function App() {
   const [isWorking, setIsWorking] = useState(false);
   const [time, setTime] = useState(25 * 60);
   const [currentTime, setCurrentTime] = useState("POMO" | "SHORT" | "BREAK");
-  const [isActive, setIsActive] = useState(flase);
+  const [isActive, setIsActive] = useState(false);
 
   function handleStartStop() {
     setIsActive(!isActive)

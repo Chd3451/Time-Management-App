@@ -22,7 +22,8 @@ export default function App() {
     } else {
       clearInterval(interval);
     }
-  }, [isActive])
+    return () => clearInterval(interval);
+  }, [isActive, time]);
 
   function handleStartStop() {
     playSound();

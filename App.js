@@ -22,6 +22,13 @@ export default function App() {
     } else {
       clearInterval(interval);
     }
+    
+    if (time === 0) {
+      setIsActive(false);
+      setIsWorking(prev => !prev);
+      setTime(isWorking ? 300 : 1500);
+    };
+
     return () => clearInterval(interval);
   }, [isActive, time]);
 

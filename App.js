@@ -4,6 +4,7 @@ import {useState} from "react";
 import Header from './src/components/Header';
 import Timer from './src/components/Timer';
 
+
 const colors = ["#F7DC6F","#A2D9CE","#D7BDE2"]
 
 export default function App() {
@@ -15,6 +16,8 @@ export default function App() {
   function handleStartStop() {
     setIsActive(!isActive)
   }
+
+ 
 
   return (
     <SafeAreaView style={[styles.container, {backgroundColor: colors[currentTime] }]}>

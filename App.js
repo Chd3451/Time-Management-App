@@ -27,11 +27,10 @@ export default function App() {
       <Header currentTime={currentTime}
       setCurrentTime={setCurrentTime}
       setTime={setTime}
-      
       />
       <Timer 
       time={time} />
-      <TouchableOpacity  onPress={handelStartStop}
+      <TouchableOpacity  onPress={handleStartStop}
       style={styles.button}>
         <Text style={{color: "white", fontWeight: "bold"}}>
           {isActive ? "STOP" : "START"}</Text>

@@ -7,15 +7,15 @@
 
 
 	
-## <picture><img src = "https://avatars.githubusercontent.com/u/63863286?v=4" width = 50px></picture> <picture><img src = "https://avatars.githubusercontent.com/u/49769503?v=4" width = 50px></picture> POMODORO APP
+<picture><img src = "https://avatars.githubusercontent.com/u/63863286?v=4" width = 50px></picture> <picture><img src = "https://avatars.githubusercontent.com/u/49769503?v=4" width = 50px></picture> 
+# POMODORO APP
 
-<picture> <img align="right" src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/Right_Side.gif" width = 250px></picture>
 
 
 <br>
 
 <h4>
--Well, starting with the description of the app, we have a Pomodoro application with three different options, which is the Pomodoro working time, a short break, which is a small time of 5 minutes to take a break within the Pomodoro time, which is 25 minutes, and we have the long break, which is the longest time of 15 minutes. 
+Well, starting with the description of the app, we have a Pomodoro application with three different options, which is the Pomodoro working time, a short break, which is a small time of 5 minutes to take a break within the Pomodoro time, which is 25 minutes, and we have the long break, which is the longest time of 15 minutes. 
 <br><br>
 Well, for the project we used what was JavaScript. We also used components like Header and timer programmatically to make the clock theme and buttons work. We also imported Todo from React-Native in most of the functions of the application. 
 

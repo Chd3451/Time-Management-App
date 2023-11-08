@@ -47,7 +47,7 @@ export default function App() {
   return (
     <SafeAreaView style={[styles.container, {backgroundColor: colors[currentTime] }]}>
     <View style={{ flex: 1,
-    paddingHorizontal:15,
+       paddingHorizontal: 15,
        paddingTop: Platform.OS === "android" && 30}}>
 
       <Text style={styles.text}>Pomodoro</Text>
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    alingItems: "center",
+    alignItems: "center",
     backgroundColor: "#333333",
     padding: 15,
     marginTop: 15,

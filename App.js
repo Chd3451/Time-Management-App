@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Platform, Text, View, Button, SafeAreaView, TouchableOpacity} from 'react-native';
 import {useEffect, useState} from "react";
-import Header from './src/components/Header';
-import Timer from './src/components/Timer';
+import Header from './src/components/organism/header';
+import Timer from './src/components/organism/timer';
+import StartStopButton from './src/components/atoms/start-stop-button';
 import { Audio } from "expo-av";
 
-const colors = ["#F7DC6F","#A2D9CE","#D7BDE2"]
+const colors = ["#F7DC6F","#A2D9CE","#9664C8"]
 
 export default function App() {
   const [isWorking, setIsWorking] = useState(false);
@@ -49,8 +50,6 @@ export default function App() {
     <View style={{ flex: 1,
        paddingHorizontal: 15,
        paddingTop: Platform.OS === "android" && 30}}>
-
-      <Text style={styles.text}>Pomodoro</Text>
       
       <Header currentTime={currentTime}
       setCurrentTime={setCurrentTime}
@@ -58,13 +57,7 @@ export default function App() {
       />
       <Timer 
       time={time} />
-      <TouchableOpacity  onPress={handleStartStop}
-      style={styles.button}>
-        <Text style={{color: "white", fontWeight: "bold"}}>
-          {isActive ? "STOP" : "START"}</Text>
-      </TouchableOpacity>
-
-
+      <StartStopButton isActive={isActive} onPress={handleStartStop} />
       
     </View>
     </SafeAreaView>
@@ -81,11 +74,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
 
-  button: {
-    alignItems: "center",
-    backgroundColor: "#333333",
-    padding: 15,
-    marginTop: 15,
-    borderRadius: 15,
-  }
 });

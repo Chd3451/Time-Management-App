@@ -69,6 +69,15 @@ Well, for the project we used what was JavaScript. We also used components like 
     ![Terminal](https://img.shields.io/badge/Terminal-%23054020?style=for-the-badge&logo=gnu-bash&logoColor=white)
     
 
+- **Created by**:
+
+    <picture><img src = "https://avatars.githubusercontent.com/u/63863286?v=4" width = 50px></picture>
+       <picture><img src = "https://avatars.githubusercontent.com/u/49769503?v=4" width = 50px></picture>
+    <br>
+  Jefferson Hidalgo 2021-1203
+    <br>
+  Charlie Delgado 2021-1092
+    
 
 </p>
 

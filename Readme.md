@@ -7,7 +7,7 @@
 
 
 	
-<picture><img src = "https://avatars.githubusercontent.com/u/63863286?v=4" width = 50px></picture> <picture><img src = "https://avatars.githubusercontent.com/u/49769503?v=4" width = 50px></picture> 
+<picture><img src = "https://avatars.githubusercontent.com/u/63863286?v=4" width = 50px></picture> <picture><img src = "https://avatars.githubusercontent.com/u/49769503?v=4" width = 50px align="center">></picture> 
 # POMODORO APP
 
 

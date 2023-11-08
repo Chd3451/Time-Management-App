@@ -3,7 +3,7 @@ import { StyleSheet, Platform, Text, View, Button, SafeAreaView, TouchableOpacit
 import {useEffect, useState} from "react";
 import Header from './src/components/organism/header';
 import Timer from './src/components/organism/timer';
-import StartStopButton from './src/components/atoms/StartStopButton';
+import StartStopButton from './src/components/atoms/start-stop-button';
 import { Audio } from "expo-av";
 
 const colors = ["#F7DC6F","#A2D9CE","#D7BDE2"]

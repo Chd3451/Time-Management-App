@@ -21,9 +21,9 @@ Well, for the project we used what was JavaScript. We also used components like 
 
 <br><br>
 <br><br><br>
-<img src="https://github.com/JeffersonHidalgo/Readme-doc/blob/main/25%20mnt.jpeg?raw=true" width="200" height="340" style="float: left;">
-<img src="https://github.com/JeffersonHidalgo/Readme-doc/blob/main/5%20mnt.jpeg?raw=true" width="200" height="340" style="float: left;">
-<img src="https://github.com/JeffersonHidalgo/Readme-doc/blob/main/15%20mnt.jpeg?raw=true" width="200" height="340" style="float: right;">
+<img src="https://github.com/JeffersonHidalgo/Readme-Doc2/blob/main/25%20mnt.jpeg?raw=true" width="200" height="340" style="float: left;">
+<img src="https://github.com/JeffersonHidalgo/Readme-Doc2/blob/main/5%20mnt.jpeg?raw=true" width="200" height="340" style="float: left;">
+<img src="https://github.com/JeffersonHidalgo/Readme-Doc2/blob/main/15%20mnt.jpeg?raw=true" width="200" height="340" style="float: right;">
 
 
 <br><br>

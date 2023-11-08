@@ -3,6 +3,7 @@ import { StyleSheet, Platform, Text, View, Button, SafeAreaView, TouchableOpacit
 import {useEffect, useState} from "react";
 import Header from './src/components/organism/header';
 import Timer from './src/components/organism/timer';
+import StartStopButton from './src/components/atoms/StartStopButton';
 import { Audio } from "expo-av";
 
 const colors = ["#F7DC6F","#A2D9CE","#D7BDE2"]
@@ -58,11 +59,7 @@ export default function App() {
       />
       <Timer 
       time={time} />
-      <TouchableOpacity  onPress={handleStartStop}
-      style={styles.button}>
-        <Text style={{color: "white", fontWeight: "bold"}}>
-          {isActive ? "STOP" : "START"}</Text>
-      </TouchableOpacity>
+      <StartStopButton isActive={isActive} onPress={handleStartStop} />
 
 
       
@@ -81,11 +78,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
 
-  button: {
-    alignItems: "center",
-    backgroundColor: "#333333",
-    padding: 15,
-    marginTop: 15,
-    borderRadius: 15,
-  }
 });

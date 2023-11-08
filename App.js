@@ -50,8 +50,6 @@ export default function App() {
     <View style={{ flex: 1,
        paddingHorizontal: 15,
        paddingTop: Platform.OS === "android" && 30}}>
-
-      <Text style={styles.text}>Pomodoro</Text>
       
       <Header currentTime={currentTime}
       setCurrentTime={setCurrentTime}
@@ -60,8 +58,6 @@ export default function App() {
       <Timer 
       time={time} />
       <StartStopButton isActive={isActive} onPress={handleStartStop} />
-
-
       
     </View>
     </SafeAreaView>

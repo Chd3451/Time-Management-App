@@ -1,40 +1,31 @@
-import {View, Text, StyleSheet} from "react-native";
-import { TouchableOpacity } from "react-native";
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import HeaderOptionsButtons from '../../molecules/header-options-buttons';
 
-const options = ["Pomodoro", "Short Break", " Long Breack"];
+const options = ['Pomodoro', 'Short Break', 'Long Break'];
 
-export default function Header ({currentTime, setCurrentTime, setTime}){ 
-
-  function handlesPress(index) {
+export default function Header({ currentTime, setCurrentTime, setTime }) {
+  function handleOptionPress(index) {
     const newTime = index === 0 ? 25 : index === 1 ? 5 : 15;
     setCurrentTime(index);
     setTime(newTime * 60);
   }
 
-    return(
-        <View style={{flexDirection: "row" }}>
-         {options.map((item, index) => (
-           <TouchableOpacity key={index} 
-           onPress={() => handlesPress(index)} 
-           style={[styles.itemStyle, currentTime !== index && { borderColor: "transparent"}
-        ]}
-            >
-             <Text style={{fontWeight: "bold"}}>{item}</Text>
-           </TouchableOpacity>
-    ))}
-        </View>
-    );
-}
-   
-const styles = StyleSheet.create({
-itemStyle: {
-    width: "33%",
-    alignItems: "center",
-    borderWidth: 3, 
-    padding: 5, 
-    borderRadius: 10,
-    borderColor: "white",
-    marginVertical: 20,
+  return (
+    <View>
+      <Text style={styles.text}>Pomodoro</Text>
+      <HeaderOptionsButtons
+        options={options}
+        selectedOption={currentTime}
+        onOptionPress={handleOptionPress}
+      />
+    </View>
+  );
 }
 
-})
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 32,
+    fontWeight: 'bold',
+  },
+});

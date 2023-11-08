@@ -16,7 +16,7 @@
 
 <h4>
 -Well, starting with the description of the app, we have a Pomodoro application with three different options, which is the Pomodoro working time, a short break, which is a small time of 5 minutes to take a break within the Pomodoro time, which is 25 minutes, and we have the long break, which is the longest time of 15 minutes. 
-<br>
+<br><br>
 Well, for the project we used what was JavaScript. We also used components like Header and timer programmatically to make the clock theme and buttons work. We also imported Todo from React-Native in most of the functions of the application. 
 
 <br><br>
